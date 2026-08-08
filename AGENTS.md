@@ -12,6 +12,17 @@
 - Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
 - Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
 
+## Local preview
+
+- MDX pages live at the repo **root** (not in a `docs/` subfolder) — `navigation.pages` paths in `docs.json` resolve relative to the root.
+- Mintlify CLI rejects Node 25+. This machine has Node 26, so run the preview under Node 22:
+
+```bash
+npx --yes node@22 <path-to-mintlify>/index.js dev
+```
+
+- The Mintlify package is cached by npx under `~/.npm/_npx/*/node_modules/mintlify/`.
+
 ## Terminology
 
 {/* Add product-specific terms and preferred usage */}
