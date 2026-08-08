@@ -1,0 +1,56 @@
+---
+title: "Manajemen Diskon"
+description: "Membuat diskon persen atau nominal dengan kode voucher, minimum pembelian, dan batas maksimal."
+---
+
+# Manajemen Diskon
+
+Menu **Diskon** membuat potongan harga yang nantinya **dipilih kasir** di Aplikasi POS.
+
+## Menambahkan diskon
+
+1. Buka **Produk & Stok → Diskon**.
+2. Klik **Tambah Diskon**.
+3. Isi data:
+
+| Kolom | Keterangan |
+|---|---|
+| **Nama** | Nama yang tampil di POS (misal "Diskon Ramadhan") |
+| **Kode voucher** | Kode unik diskon (opsional) |
+| **Tipe** | **Persen** (misal 10%) atau **Nominal** (misal Rp5.000) |
+| **Nilai** | Besaran potongan sesuai tipe |
+| **Minimum pembelian** | Total belanja minimum agar diskon berlaku |
+| **Maksimal diskon** | Batas atas potongan (misal maks. Rp10.000) |
+| **Tanggal berlaku** | Periode aktif diskon |
+| **Status** | **Aktif** atau **Nonaktif** |
+
+4. Simpan.
+
+<Callout type="example" title="Contoh">
+  Diskon "Promo Akhir Pekan": tipe **Persen**, nilai **15%**, min. pembelian **Rp100.000**, maks. diskon **Rp25.000**.
+</Callout>
+
+## Cara kasir memakai diskon
+
+Baca [Diskon di Aplikasi POS](/pos-app/discount). Singkatnya, kasir memilih diskon pada keranjang saat transaksi; sistem otomatis menghitung potongan jika syarat terpenuhi.
+
+## Mengedit & menonaktifkan diskon
+
+- **Edit** — ubah nilai, syarat, periode, atau status.
+- **Nonaktifkan** — diskon berhenti tampil di POS tetapi datanya tersimpan.
+
+<Callout type="warning" title="Syarat tidak terpenuhi">
+  Jika total transaksi di bawah **minimum pembelian**, diskon tidak akan berlaku di POS.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Diskon persen vs nominal?">
+    Persen = potongan berdasarkan persentase total (misal 10%). Nominal = potongan sejumlah tetap (misal Rp5.000).
+  </Accordion>
+  <Accordion title="Kenapa kasir tidak melihat diskon saya?">
+    Pastikan diskon berstatus **Aktif**, periode berlakunya sesuai, dan kode voucher benar.
+  </Accordion>
+  <Accordion title="Diskon bisa dipakai berulang?">
+    Ya. Diskon berlaku untuk transaksi selama masih aktif dan memenuhi syarat.
+  </Accordion>
+</AccordionGroup>

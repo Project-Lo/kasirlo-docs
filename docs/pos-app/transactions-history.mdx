@@ -1,0 +1,53 @@
+---
+title: "Riwayat Transaksi (POS)"
+description: "Melihat transaksi terakhir di Aplikasi POS, detail item, dan struk."
+---
+
+# Riwayat Transaksi (POS)
+
+Tab **Transaksi** di Aplikasi POS menampilkan transaksi terbaru yang dibuat di outlet tersebut. Ini berguna untuk mengecek ulang penjualan tanpa harus membuka Dashboard.
+
+## Melihat riwayat
+
+1. Buka tab **Transaksi** di bagian bawah aplikasi.
+2. Daftar **transaksi terakhir** ditampilkan (paling baru di atas).
+3. Gunakan **muat ulang** untuk menyegarkan daftar jika ada transaksi baru.
+
+<Callout type="info" title="Batasan tampilan">
+  Aplikasi POS menampilkan transaksi terbaru (halaman per halaman). Untuk pencarian lengkap dengan filter, gunakan Dashboard → [Riwayat Transaksi](/backoffice/transactions).
+</Callout>
+
+## Detail transaksi
+
+Ketuk satu transaksi untuk melihat rincian:
+
+- Nomor/ID transaksi dan waktu.
+- **Item yang dibeli** beserta jumlah dan harga.
+- Diskon dan pajak yang diterapkan.
+- Metode pembayaran dan total.
+- Status transaksi.
+
+## Melihat & mencetak ulang struk
+
+Pada detail transaksi, pilih **Lihat Struk** untuk menampilkan struk. Jika printer tersedia, struk bisa dicetak ulang.
+
+## Status transaksi
+
+| Status | Arti |
+|---|---|
+| **Completed** | Transaksi selesai dan dibayar penuh |
+| **Refunded** | Transaksi telah dikembalikan/diretur |
+| **Void** | Transaksi dibatalkan |
+
+<Callout type="warning" title="Retur/void dari mana?">
+  Aplikasi POS menampilkan status ini, tetapi aksi retur/refund dilakukan melalui API kasir (diluar tampilan utama). Jika ada transaksi perlu dikembalikan, hubungi admin/pemilik toko.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Transaksi saya tidak muncul?">
+    Pastikan Anda melihat outlet yang benar di halaman **Profil** (outlet aktif) dan sudah memuat ulang daftar.
+  </Accordion>
+  <Accordion title="Bisa cari transaksi di aplikasi POS?">
+    Untuk pencarian mendalam dengan filter tanggal/status, gunakan Dashboard → Riwayat Transaksi.
+  </Accordion>
+</AccordionGroup>

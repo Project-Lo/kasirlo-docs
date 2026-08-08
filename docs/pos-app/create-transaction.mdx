@@ -1,0 +1,70 @@
+---
+title: "Membuat Transaksi"
+description: "Alur transaksi POS: pilih produk, keranjang, diskon, tipe pesanan, hingga pembayaran."
+---
+
+# Membuat Transaksi
+
+Halaman **POS** adalah layar utama kasir. Di sinilah Anda memilih produk, memproses keranjang, dan menyelesaikan pembayaran.
+
+<Callout type="warning" title="Syarat transaksi">
+  Pastikan shift sudah dibuka. Tanpa shift aktif, Anda tidak bisa bertransaksi. Baca [Buka & Tutup Shift](/pos-app/shift).
+</Callout>
+
+## Menambahkan produk ke keranjang
+
+Ada tiga cara menambahkan produk:
+
+**1. Dari katalog**
+- Telusuri daftar produk pada grid katalog.
+- Ketuk produk untuk memasukkannya ke keranjang.
+
+**2. Pencarian**
+- Ketuk kotak **Cari produk...** dan ketik nama atau SKU produk.
+- Ketuk hasil untuk menambahkan.
+
+**3. Scan barcode**
+- Ketuk ikon **barcode** untuk memindai langsung, atau gunakan pemindai bawaan di bawah katalog.
+- Barcode yang cocok otomatis menambahkan produk ke keranjang.
+
+**Filter kategori**
+- Gunakan menu kategori di atas katalog untuk menampilkan produk per kategori saja.
+
+<Callout type="tip" title="Produk tidak muncul?">
+  Pastikan produk sudah diaktifkan dan memiliki harga di outlet tersebut. Cek di Dashboard → [Manajemen Produk](/products/manage-products).
+</Callout>
+
+## Mengelola keranjang
+
+Keranjang tampil di sisi kanan layar (atau di bawah pada layar kecil):
+
+- **Atur jumlah** — tekan **+** / **−** pada item.
+- **Hapus item** — gunakan tombol hapus pada item.
+- **Ringkasan** — total item, subtotal, diskon, pajak, dan total akhir terlihat otomatis.
+
+## Diskon & tipe pesanan
+
+- Ketuk **Diskon** untuk memilih diskon yang sudah dibuat di Dashboard (persen atau nominal).
+- Pilih **Tipe Pesanan** (misal Dine-in, Takeaway, Delivery) sesuai kebutuhan — beberapa tipe mewajibkan meja atau alamat.
+
+Pelajari detailnya di [Diskon](/pos-app/discount) dan [Tipe Pesanan](/pos-app/order-type).
+
+## Menyelesaikan transaksi
+
+1. Pastikan keranjang sudah sesuai.
+2. Ketuk **Bayar** untuk membuka halaman pembayaran.
+3. Ikuti langkah di panduan [Pembayaran](/pos-app/payment).
+
+Setelah pembayaran berhasil, struk dicetak otomatis (jika printer diatur) dan transaksi tercatat.
+
+<AccordionGroup>
+  <Accordion title="Bisakah mengubah jumlah sebelum bayar?">
+    Bisa. Sesuaikan jumlah item di keranjang kapan pun sebelum menekan **Bayar**.
+  </Accordion>
+  <Accordion title="Bagaimana jika produk tidak punya stok?">
+    Penjualan tetap dapat dilakukan sesuai kebijakan toko; stok akan berkurang setelah transaksi. Stok diatur di Dashboard → Manajemen Produk.
+  </Accordion>
+  <Accordion title="Di mana melihat transaksi yang sudah selesai?">
+    Buka tab **Transaksi** untuk melihat riwayat transaksi terakhir. Baca [Riwayat Transaksi](/pos-app/transactions-history).
+  </Accordion>
+</AccordionGroup>

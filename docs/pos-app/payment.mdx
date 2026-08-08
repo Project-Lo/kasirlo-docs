@@ -1,0 +1,58 @@
+---
+title: "Pembayaran"
+description: "Memproses pembayaran transaksi: metode bayar, uang tunai, nominal dibayar, dan kembalian."
+---
+
+# Pembayaran
+
+Setelah keranjang siap, halaman **Bayar** memproses pembayaran pelanggan. Ringkasan transaksi (subtotal, diskon, pajak, dan total) tampil di layar ini.
+
+## Memilih metode pembayaran
+
+1. Pada halaman bayar, buka pilihan **Metode Pembayaran**.
+2. Pilih metode yang tersedia — misal **Tunai**, **QRIS**, **Debit/Kredit**, **E-Wallet**, atau metode lain yang diaktifkan di Dashboard.
+
+<Callout type="info" title="Metode pembayaran diatur di mana?">
+  Daftar metode dikelola admin di **Dashboard → Kelola Toko → Metode Pembayaran**. Baca [Metode Pembayaran](/store-management/payment-methods).
+</Callout>
+
+## Pembayaran tunai
+
+Saat metode **Tunai** dipilih:
+
+1. Masukkan **nominal yang dibayar** pelanggan.
+2. Gunakan tombol cepat nominal untuk mempercepat (misal **Uang Pas** atau nominal bulat).
+3. **Kembalian** dihitung otomatis (nominal dibayar − total transaksi).
+4. Jika nominal cukup, tombol **Konfirmasi Bayar** aktif.
+
+<Callout type="warning" title="Nominal kurang dari total">
+  Pembayaran tidak bisa diproses jika nominal yang dibayar lebih kecil dari total transaksi.
+</Callout>
+
+## Pembayaran non-tunai
+
+Untuk metode selain tunai (QRIS, Debit, E-Wallet, dll.), **nominal terisi otomatis sebesar total transaksi** — tidak perlu memasukkan nominal secara manual.
+
+## Menyelesaikan pembayaran
+
+1. Pastikan metode dan nominal sudah benar.
+2. Ketuk **Konfirmasi Bayar**.
+3. Pembayaran diproses → transaksi tersimpan → struk dicetak otomatis (jika printer sudah diatur).
+
+<Callout type="tip" title="Cetak struk">
+  Untuk mencetak struk secara otomatis setelah pembayaran, atur printer di **Profil → Atur Printer** dan aktifkan opsi cetak otomatis. Baca [Printer Thermal](/pos-app/thermal-printer).
+</Callout>
+
+## Setelah transaksi
+
+- Transaksi tampil di tab **Transaksi** dengan status **Completed**.
+- Admin melihatnya di Dashboard → **Riwayat Transaksi**.
+
+<AccordionGroup>
+  <Accordion title="Pelanggan bayar sebagian (DP)?">
+    KasirLo saat ini memproses pembayaran penuh pada transaksi. Untuk pembayaran bertahap, sesuaikan metode sesuai kebijakan toko Anda.
+  </Accordion>
+  <Accordion title="Metode bayar favorit saya tidak muncul?">
+    Metode tersebut harus diaktifkan terlebih dahulu oleh admin di Dashboard → Metode Pembayaran.
+  </Accordion>
+</AccordionGroup>

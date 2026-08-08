@@ -1,0 +1,51 @@
+---
+title: "Tipe Pesanan"
+description: "Membuat tipe pesanan dine-in, takeaway, delivery dengan ketentuan meja atau alamat."
+---
+
+# Tipe Pesanan
+
+Menu **Tipe Pesanan** mendefinisikan cara pelanggan menerima pesanan — **Dine-in**, **Takeaway**, **Delivery**, dan lainnya. Kasir memilih tipe ini saat transaksi di POS.
+
+## Menambahkan tipe pesanan
+
+1. Buka **Produk & Stok → Tipe Pesanan**.
+2. Klik **Tambah Tipe Pesanan**.
+3. Isi data:
+
+| Kolom | Keterangan |
+|---|---|
+| **Nama** | Nama tipe (misal "Dine-in", "Takeaway", "Delivery") |
+| **Kode** | Terisi otomatis atau sesuai sistem |
+| **Wajib meja** | Jika aktif, kasir **wajib mengisi nomor meja** di POS |
+| **Wajib alamat** | Jika aktif, kasir **wajib mengisi alamat** di POS |
+| **Warna** | Warna label tipe |
+| **Urutan** | Posisi dalam daftar |
+
+4. Simpan.
+
+<Callout type="info" title="Tipe bawaan">
+  KasirLo menyediakan tipe pesanan bawaan (default) yang langsung bisa dipakai, dan Anda bisa menambahkan tipe lain sesuai bisnis.
+</Callout>
+
+## Cara kasir memakai tipe pesanan
+
+Baca [Tipe Pesanan di Aplikasi POS](/pos-app/order-type). Saat di halaman bayar, kasir memilih tipe; kolom meja/alamat wajib muncul sesuai pengaturan tipe.
+
+## Mengedit & menonaktifkan
+
+- **Edit** — ubah nama, ketentuan wajib, warna, atau urutan.
+- **Nonaktifkan** — tipe tidak tampil di POS.
+
+<Callout type="tip" title="Untuk restoran">
+  Aktifkan **Wajib meja** pada tipe "Dine-in" agar setiap pesanan makan di tempat selalu tercatat nomor mejanya.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Apa bedanya wajib meja dan wajib alamat?">
+    Wajib meja untuk pelanggan makan di tempat (nomor meja). Wajib alamat untuk pengantaran (alamat tujuan). Sesuaikan dengan tipe pesanan Anda.
+  </Accordion>
+  <Accordion title="Tipe pesanan memengaruhi laporan?">
+    Ya, transaksi bisa dilihat/dikelompokkan per tipe pesanan di laporan.
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,50 @@
+---
+title: "Pajak"
+description: "Menambahkan pajak (PPN dan lainnya) yang dikenakan pada transaksi."
+---
+
+# Pajak
+
+Menu **Pajak** menambahkan pajak — seperti **PPN** — yang otomatis dihitung pada transaksi.
+
+## Menambahkan pajak
+
+1. Buka **Kelola Toko → Pajak**.
+2. Klik **Tambah Pajak**.
+3. Isi data:
+
+| Kolom | Keterangan |
+|---|---|
+| **Nama** | Nama pajak (misal "PPN 11%") |
+| **Tarif (%)** | Besaran persentase pajak |
+| **Mode** | **Additive** (ditambahkan di atas total) atau **Inclusive** (sudah termasuk harga) |
+| **Urutan** | Prioritas jika ada beberapa pajak |
+| **Status** | **Aktif** atau **Nonaktif** |
+
+4. Simpan.
+
+<Callout type="info" title="Satu pajak aktif">
+  Sistem umumnya mengizinkan **satu pajak aktif** pada satu waktu. Nonaktifkan pajak lama sebelum mengaktifkan pajak baru.
+</Callout>
+
+## Cara pajak dihitung
+
+- **Additive**: pajak **ditambahkan** ke total transaksi. Contoh total Rp100.000 + PPN 11% = **Rp111.000**.
+- **Inclusive**: pajak **sudah termasuk** harga produk. Harga yang tampil sudah mencakup pajak.
+
+<Callout type="tip" title="Untuk PPN Indonesia">
+  PPN umumnya memakai mode **Additive**: tarif 11% ditambahkan di atas total transaksi.
+</Callout>
+
+## Pajak di Aplikasi POS
+
+Saat pajak aktif, ringkasan transaksi di POS menampilkan baris **Pajak** yang dihitung otomatis sesuai tarif, dan total akhir sudah termasuk pajak.
+
+<AccordionGroup>
+  <Accordion title="Bisakah memakai dua pajak sekaligus?">
+    Bergantung pengaturan sistem — umumnya satu pajak aktif. Gunakan **urutan** jika tersedia untuk pajak bertingkat.
+  </Accordion>
+  <Accordion title="Pajak tampil di struk?">
+    Ya. Baris pajak dan total termasuk pajak ditampilkan pada struk sesuai [Template Struk](/store-management/receipt).
+  </Accordion>
+</AccordionGroup>

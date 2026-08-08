@@ -1,0 +1,62 @@
+---
+title: "Riwayat Transaksi (Dashboard)"
+description: "Melihat, mencari, dan memfilter seluruh transaksi toko dari Dashboard."
+---
+
+# Riwayat Transaksi (Dashboard)
+
+Menu **Riwayat Transaksi** di Dashboard menampilkan seluruh transaksi dari semua outlet, lengkap dengan filter dan pencarian.
+
+<Callout type="info" title="Beda dengan tab Transaksi di POS">
+  Tab Transaksi di Aplikasi POS hanya menampilkan transaksi terbaru di satu perangkat. Dashboard menampilkan **seluruh transaksi** dari semua outlet dengan filter lengkap.
+</Callout>
+
+## Memfilter transaksi
+
+Gunakan opsi filter di atas tabel:
+
+- **Outlet** — pilih outlet tertentu atau **Semua Outlet**.
+- **Rentang tanggal** — batasi periode transaksi.
+- **Status** — Completed, Refunded, Void, atau lainnya.
+
+## Mencari transaksi
+
+Ketik pada kolom pencarian untuk menemukan transaksi berdasarkan nomor transaksi atau kata kunci terkait.
+
+## Tabel transaksi
+
+Setiap baris menampilkan informasi inti transaksi:
+
+- Waktu & tanggal transaksi
+- Outlet & kasir
+- Nomor transaksi
+- Jumlah item
+- Metode pembayaran
+- Total
+- Status
+
+<Callout type="note" title="Pemuatan data">
+  Data dimuat bertahap (per batch). Gunakan filter untuk mempersempit rentang jika mencari transaksi lama.
+</Callout>
+
+## Detail transaksi
+
+Klik satu baris untuk membuka detail:
+
+- Item yang dibeli (produk, jumlah, harga).
+- Diskon dan pajak.
+- Metode pembayaran dan total.
+- Status dan riwayat.
+
+<Callout type="warning" title="Retur/refund">
+  Dashboard saat ini **hanya menampilkan** status transaksi (Completed/Refunded/Void). Aksi retur/refund tidak tersedia di menu Dashboard — dikelola melalui API kasir.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Bagaimana cara menemukan transaksi lama?">
+    Gunakan filter rentang tanggal dan outlet, lalu cari berdasarkan nomor transaksi.
+  </Accordion>
+  <Accordion title="Kenapa ada transaksi status Refunded/Void?">
+    Status tersebut berasal dari sistem kasir. Jika ragu, hubungi admin atau tim dukungan KasirLo.
+  </Accordion>
+</AccordionGroup>

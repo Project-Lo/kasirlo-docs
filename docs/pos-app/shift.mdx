@@ -1,0 +1,63 @@
+---
+title: "Buka & Tutup Shift"
+description: "Shift kasir di Aplikasi POS: kas awal, kas aktual, selisih, dan riwayat shift."
+---
+
+# Buka & Tutup Shift
+
+**Shift** adalah periode kerja kasir dalam sehari. Kasir **wajib membuka shift** sebelum mulai bertransaksi di Aplikasi POS. Shift juga dipakai untuk menghitung kas: berapa uang kas yang dipegang di awal vs akhir shift.
+
+<Callout type="warning" title="Shift wajib aktif">
+  Tanpa shift yang terbuka, halaman POS tidak dapat digunakan untuk transaksi. Setiap transaksi tercatat ke shift kasir yang sedang aktif.
+</Callout>
+
+## Membuka shift
+
+1. Buka tab **Shift** di aplikasi.
+2. Masukkan **kas awal** (uang tunai yang dipegang kasir saat mulai shift, misal Rp100.000 untuk uang receh).
+3. Klik **Buka Shift**.
+
+<Callout type="tip" title="Kas awal boleh nol">
+  Jika kasir mulai tanpa uang di laci, isi **0**. Uang tunai dari penjualan nanti akan menambah saldo kas shift.
+</Callout>
+
+## Menutup shift
+
+1. Buka tab **Shift**.
+2. Klik **Tutup Shift**.
+3. Masukkan **kas aktual** — jumlah uang tunai yang benar-benar ada di laci kasir saat ini (hasil hitung manual).
+4. KasirLo menghitung **kas yang diharapkan** dan **selisih**:
+
+| Istilah | Arti |
+|---|---|
+| Kas awal | Uang tunai saat shift dibuka |
+| Kas masuk | Penambahan kas selama shift |
+| Kas keluar | Pengurangan kas selama shift |
+| Kas diharapkan | Perkiraan kas (kas awal + masuk − keluar) |
+| Kas aktual | Kas sesuai hitungan fisik Anda |
+| Selisih | Kas aktual − kas diharapkan |
+
+5. Konfirmasi penutupan shift.
+
+<Callout type="warning" title="Selisih kas tidak nol?">
+  Selisih berarti jumlah fisik tidak cocok dengan catatan. Periksa kembali hitungan sebelum menutup shift. Data shift tetap tersimpan dan bisa dicek admin di Dashboard → Kelola Toko → Shift.
+</Callout>
+
+## Riwayat shift
+
+Halaman Shift menampilkan **5 shift terakhir** untuk kasir dan outlet yang aktif. Anda bisa melihat kas awal, kas masuk/keluar, dan selisih tiap shift.
+
+## Catatan penting
+
+- Hanya **satu shift aktif** per kasir di satu outlet dalam satu waktu.
+- Setelah shift ditutup, kasir harus membuka shift baru untuk bertransaksi lagi.
+- Admin bisa melihat dan mengelola shift dari Dashboard di [Kelola Shift](/store-management/shifts).
+
+<AccordionGroup>
+  <Accordion title="Lupa menutup shift di akhir hari?">
+    Kasir tetap bisa menutup shift setelahnya. Riwayat shift mencatat semua shift, jadi hitung kas aktual sesuai uang di laci saat menutup.
+  </Accordion>
+  <Accordion title="Boleh ganti kasir di tengah hari?">
+    Boleh. Kasir yang aktif menutup shiftnya (atau meneruskan), lalu kasir berikutnya membuka shift baru di aplikasinya.
+  </Accordion>
+</AccordionGroup>

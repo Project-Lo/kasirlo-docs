@@ -1,0 +1,53 @@
+---
+title: "Login Kasir"
+description: "Cara kasir masuk ke Aplikasi POS dengan Kode Akses Kasir dan PIN."
+---
+
+# Login Kasir
+
+Login di **Aplikasi POS** berbeda dari login Dashboard. Kasir tidak memakai email/password, melainkan tiga langkah:
+
+**Kode Akses Kasir** → **Pilih Akun Kasir** → **PIN 6 digit**
+
+<Callout type="info" title="Kode akses dari mana?">
+  Kode Akses Kasir dibuat oleh pemilik/admin di **Dashboard → Kelola Toko → Kode Akses Kasir**. Satu kode dibuat per perangkat/outlet. Baca [Kode Akses Kasir](/store-management/cashier-access).
+</Callout>
+
+## Langkah 1 — Masukkan Kode Akses
+
+1. Buka Aplikasi KasirLo POS di HP/tablet.
+2. Masukkan **Kode Akses Kasir** yang diberikan pemilik (kode 8 karakter).
+3. Klik **Lanjut / Masuk**.
+
+<Callout type="tip" title="Kode salah?">
+  Pastikan kode diketik dengan benar (huruf kapital/kecil sesuai yang dibuat). Jika ragu, minta kode baru dari pemilik di halaman Kode Akses Kasir.
+</Callout>
+
+## Langkah 2 — Pilih Akun Kasir
+
+Setelah kode akses benar, Anda melihat daftar akun kasir yang tersedia di outlet tersebut. Pilih akun Anda.
+
+## Langkah 3 — Masukkan PIN
+
+1. Masukkan **PIN 6 digit** milik akun kasir Anda.
+2. Klik **Masuk**.
+
+<Callout type="warning" title="PIN salah berkali-kali">
+  PIN dimiliki dan diatur oleh admin di halaman **Kelola Toko → Karyawan**. Jika PIN tidak cocok, hubungi pemilik toko.
+</Callout>
+
+## Setelah login
+
+Anda masuk ke halaman **POS**. Sebelum bisa bertransaksi, Anda **wajib membuka shift**. Baca [Buka & Tutup Shift](/pos-app/shift).
+
+<AccordionGroup>
+  <Accordion title="Kasir bisa login dari HP masing-masing?">
+    Ya. Selama perangkat tersebut memiliki kode akses yang valid dan akun kasir memiliki akses ke outlet tersebut, kasir bisa login dari HP atau tablet mana pun.
+  </Accordion>
+  <Accordion title="Bagaimana cara keluar dari aplikasi?">
+    Buka tab **Profil** → **Keluar**. Sesi dihapus dari perangkat, tetapi data outlet tetap aman di backend.
+  </Accordion>
+  <Accordion title="Beda login ini dengan login web?">
+    Login web memakai email/password untuk mengakses **Dashboard** (manajemen). Login POS memakai kode akses + PIN untuk bertransaksi di outlet.
+  </Accordion>
+</AccordionGroup>

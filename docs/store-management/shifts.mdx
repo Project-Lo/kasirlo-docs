@@ -1,0 +1,56 @@
+---
+title: "Kelola Shift"
+description: "Memantau shift kasir dari Dashboard: kas awal, kas masuk/keluar, dan selisih."
+---
+
+# Kelola Shift
+
+Menu **Shift** di Dashboard menampilkan dan mengelola shift yang dibuka kasir di Aplikasi POS. Ini pandangan admin/pemilik atas seluruh shift di semua outlet.
+
+<Callout type="info" title="Beda dengan Shift di POS">
+  Tab **Shift** di Aplikasi POS dipakai kasir untuk membuka/menutup shift-nya sendiri. Menu **Shift** di Dashboard untuk **pemantauan admin** atas semua shift.
+</Callout>
+
+## Membuka / menutup shift dari Dashboard
+
+Admin dengan akses yang sesuai bisa:
+
+- Melihat shift yang sedang aktif.
+- Membuka shift baru untuk outlet tertentu.
+- Menutup shift yang berjalan.
+
+<Callout type="warning" title="Shift dan transaksi">
+  Kasir tetap perlu membuka shift di Aplikasi POS sebelum bertransaksi. Shift yang dikelola di Dashboard membantu pemantauan dan rekonsiliasi kas.
+</Callout>
+
+## Statistik shift
+
+Ringkasan menampilkan total **kas masuk** dan **kas keluar** pada periode terpilih untuk outlet yang dipilih.
+
+## Detail shift
+
+Klik satu shift untuk melihat rincian:
+
+| Kolom | Arti |
+|---|---|
+| **Kasir** | Nama kasir pemilik shift |
+| **Outlet** | Tempat shift berlangsung |
+| **Kas awal** | Uang tunai saat shift dibuka |
+| **Kas masuk** | Penambahan kas selama shift |
+| **Kas keluar** | Pengurangan kas selama shift |
+| **Kas diharapkan** | Kas awal + masuk − keluar |
+| **Kas aktual** | Kas sesuai hitungan fisik kasir |
+| **Selisih** | Kas aktual − kas diharapkan |
+
+<Callout type="tip" title="Rekonsiliasi harian">
+  Bandingkan **kas aktual** vs **kas diharapkan** tiap shift untuk mendeteksi selisih kas lebih awal.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Kasir lupa tutup shift, bisa ditutup admin?">
+    Ya. Admin dapat menutup shift dari Dashboard, atau kasir menutupnya dari aplikasi.
+  </Accordion>
+  <Accordion title="Kenapa selisih tidak nol?">
+    Selisih bisa berasal dari kesalahan hitung fisik, pengeluaran tak tercatat, atau transaksi yang dibatalkan. Periksa detail shift untuk menelusuri.
+  </Accordion>
+</AccordionGroup>

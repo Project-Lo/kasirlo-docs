@@ -1,72 +1,106 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "KasirLo Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#192E03",
+    "light": "#4A6B2A",
+    "dark": "#192E03"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Memulai",
         "pages": [
-          "index",
-          "quickstart"
-        ]
+          "getting-started/introduction",
+          "getting-started/register-login",
+          "getting-started/setup-first-store"
+        ],
+        "icon": "rocket"
+      },
+      {
+        "group": "Aplikasi POS",
+        "pages": [
+          "pos-app/login-cashier",
+          "pos-app/shift",
+          "pos-app/create-transaction",
+          "pos-app/payment",
+          "pos-app/discount",
+          "pos-app/order-type",
+          "pos-app/transactions-history",
+          "pos-app/thermal-printer",
+          "pos-app/profile"
+        ],
+        "icon": "shopping-cart"
+      },
+      {
+        "group": "Dashboard (Back Office)",
+        "pages": [
+          "backoffice/dashboard",
+          "backoffice/transactions",
+          "backoffice/expenses",
+          "backoffice/customers",
+          "backoffice/reports"
+        ],
+        "icon": "layout-dashboard"
+      },
+      {
+        "group": "Produk & Stok",
+        "pages": [
+          "products/manage-products",
+          "products/barcode-scanner",
+          "products/categories",
+          "products/discounts",
+          "products/order-types"
+        ],
+        "icon": "package"
+      },
+      {
+        "group": "Kelola Toko",
+        "pages": [
+          "store-management/branches",
+          "store-management/employees",
+          "store-management/cashier-access",
+          "store-management/shifts",
+          "store-management/staff-roles",
+          "store-management/payment-methods",
+          "store-management/tax",
+          "store-management/receipt",
+          "store-management/notifications",
+          "store-management/settings"
+        ],
+        "icon": "store"
+      },
+      {
+        "group": "Lainnya",
+        "pages": [
+          "faq"
+        ],
+        "icon": "circle-help"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Masuk Aplikasi",
+        "href": "https://kasirlo.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Mulai Gratis",
+      "href": "https://kasirlo.com/pricing"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://kasirlo.com"
     }
   }
 }

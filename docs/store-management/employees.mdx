@@ -1,0 +1,72 @@
+---
+title: "Karyawan"
+description: "Menambahkan staf kasir/admin, mengatur PIN 6 digit, outlet, dan hak akses."
+---
+
+# Karyawan
+
+Menu **Karyawan** mengelola akun orang yang bekerja di toko Anda — kasir, admin, manager, dan lainnya. Setiap karyawan memiliki akun login untuk Dashboard dan/atau Aplikasi POS.
+
+<Callout type="info" title="Karyawan vs Kode Akses">
+  **Karyawan** adalah akun orang (nama + login + PIN). **Kode Akses Kasir** adalah kode per perangkat di outlet. Baca [Kode Akses Kasir](/store-management/cashier-access).
+</Callout>
+
+## Menambahkan karyawan
+
+1. Buka **Kelola Toko → Karyawan**.
+2. Klik **Tambah Karyawan**.
+3. Isi data:
+
+| Kolom | Keterangan |
+|---|---|
+| **Username** | Nama pengguna untuk login |
+| **Nama** | Nama lengkap / nama panggilan |
+| **Email** | Email akun |
+| **Telepon** | Nomor HP |
+| **Password** | Password untuk login |
+| **PIN 6 digit** | PIN untuk login di Aplikasi POS |
+| **Role** | Peran (lihat [Atur Peran Staff](/store-management/staff-roles)) |
+| **Outlet** | Outlet yang dapat diakses karyawan |
+
+4. Simpan.
+
+<Callout type="warning" title="PIN untuk Aplikasi POS">
+  PIN **6 digit** ini yang dipakai kasir setelah memasukkan kode akses. Tanpa PIN yang benar, kasir tidak bisa masuk ke Aplikasi POS.
+</Callout>
+
+## Mengatur outlet
+
+Pilih outlet mana saja yang bisa diakses karyawan, atau beri akses ke semua outlet sesuai perannya.
+
+<Callout type="tip" title="Kasir pindah outlet">
+  Dengan akses ke beberapa outlet, kasir bisa berpindah tempat tugas dan mengganti **outlet aktif** di halaman Profil Aplikasi POS.
+</Callout>
+
+## Mengganti password & PIN
+
+Klik karyawan → menu keamanan:
+
+- **Ganti password** — ubah password login.
+- **Ganti PIN** — ubah PIN Aplikasi POS.
+
+<Callout type="tip" title="Kasir lupa PIN?">
+  Admin/pemilik dapat mengatur ulang PIN dari halaman ini tanpa menunggu kasir.
+</Callout>
+
+## Menonaktifkan karyawan
+
+- Klik **Nonaktifkan** agar akun tidak bisa login lagi.
+- Data karyawan tetap tersimpan untuk riwayat.
+
+<Callout type="warning" title="Akun owner">
+  Akun **owner** tidak bisa dinonaktifkan/diubah oleh pengguna lain.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Berapa karyawan maksimal?">
+    Bergantung paket langganan Anda.
+  </Accordion>
+  <Accordion title="Karyawan tidak bisa login POS?">
+    Pastikan PIN 6 digit sudah diatur, akun aktif, dan outlet-nya memiliki kode akses yang valid.
+  </Accordion>
+</AccordionGroup>

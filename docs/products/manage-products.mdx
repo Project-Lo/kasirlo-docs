@@ -1,0 +1,90 @@
+---
+title: "Manajemen Produk"
+description: "Katalog master produk, harga & stok per outlet, dan penyesuaian stok."
+---
+
+# Manajemen Produk
+
+Menu **Produk** di Dashboard mengelola seluruh produk bisnis Anda. KasirLo memakai model **produk master + harga/stok per outlet**:
+
+- **Katalog master** — data produk (nama, kategori, SKU, barcode, satuan) berlaku untuk semua outlet.
+- **Per outlet** — harga jual, harga modal, dan stok bisa berbeda di tiap outlet.
+
+<Callout type="info" title="Filter outlet">
+  Dengan filter outlet **"Semua Outlet"**, Anda mengelola katalog master. Pilih outlet tertentu untuk mengatur harga & stok di outlet tersebut.
+</Callout>
+
+## Menambahkan produk master
+
+1. Buka **Produk & Stok → Produk**.
+2. Klik **Tambah Produk**.
+3. Isi data master:
+
+| Kolom | Keterangan |
+|---|---|
+| **Nama produk** | Nama yang tampil di POS |
+| **Kategori** | Kelompok produk (lihat [Kategori](/products/categories)) |
+| **SKU** | Kode unik produk |
+| **Barcode** | Nomor barcode produk (untuk scan) |
+| **Satuan dasar** | Misal pcs, kg, dus |
+| **Deskripsi** | Opsional — keterangan produk |
+| **Gambar** | Opsional — foto produk |
+
+4. Simpan.
+
+## Mengatur harga & stok per outlet
+
+Setelah produk dibuat, pilih outlet tertentu lalu atur:
+
+- **Harga jual** — harga yang dibebankan ke pelanggan.
+- **Harga modal** — biaya perolehan produk (dipakai hitung laba).
+- **Stok saat ini** — jumlah stok di outlet.
+- **Stok minimum** — ambang stok; produk di bawah minimum muncul di "Produk Perlu Perhatian".
+
+<Callout type="tip" title="Stok di tiap outlet bisa beda">
+  Outlet A bisa punya 10 pcs dan outlet B 5 pcs untuk produk yang sama — stok dihitung terpisah per outlet.
+</Callout>
+
+## Penyesuaian stok
+
+Gunakan **penyesuaian stok** saat terjadi selisih (pecah, kadaluarsa, hilang, salah input):
+
+1. Buka produk pada outlet yang dimaksud.
+2. Pilih **Penyesuaian Stok**.
+3. Masukkan **perubahan jumlah** (+ untuk tambah, − untuk kurangi).
+4. Isi **alasan** penyesuaian.
+5. Simpan — stok diperbarui dan perubahan tercatat.
+
+<Callout type="warning" title="Stok di bawah nol">
+  Kurangi stok sesuai stok yang ada. Pengurangan melebihi stok dapat menghasilkan stok negatif.
+</Callout>
+
+## Import & ekspor Excel
+
+Untuk membuat banyak produk sekaligus:
+
+1. Gunakan tombol **Import** dan unduh **template Excel**.
+2. Isi template sesuai kolom yang disediakan.
+3. Unggah file — produk dibuat/ diperbarui massal.
+4. Gunakan **Ekspor** untuk mengunduh daftar produk ke Excel.
+
+<Callout type="tip" title="Untuk penambahan massal">
+  Import Excel sangat membantu saat pindahan dari kasir lain atau membuka outlet baru.
+</Callout>
+
+## Mengedit & menonaktifkan produk
+
+- **Edit** — ubah data master atau harga/stok per outlet.
+- **Nonaktifkan** — produk tidak lagi muncul di POS tetapi datanya tersimpan.
+
+<AccordionGroup>
+  <Accordion title="Kenapa produk tidak muncul di POS?">
+    Pastikan produk **aktif** dan memiliki **harga** di outlet yang sedang aktif di Aplikasi POS.
+  </Accordion>
+  <Accordion title="Apa bedanya edit di "Semua Outlet" vs satu outlet?">
+    "Semua Outlet" mengubah katalog master (nama, kategori, dll). Pilih satu outlet untuk mengubah harga & stok di outlet itu saja.
+  </Accordion>
+  <Accordion title="Bisa hapus produk?">
+    Disarankan **nonaktifkan**, bukan hapus, agar riwayat transaksi yang memakai produk tetap valid.
+  </Accordion>
+</AccordionGroup>

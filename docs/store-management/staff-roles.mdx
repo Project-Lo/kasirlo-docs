@@ -1,0 +1,73 @@
+---
+title: "Atur Peran Staff"
+description: "Mengelola peran dan izin (permission) staff: Owner, Admin, Manager, Kasir, dan lainnya."
+---
+
+# Atur Peran Staff
+
+Menu **Atur Peran Staff** mengontrol apa yang boleh dilakukan setiap karyawan di KasirLo. Setiap karyawan mendapat satu **peran (role)**, dan tiap peran memiliki daftar **izin (permission)**.
+
+## Peran bawaan
+
+KasirLo menyediakan peran bawaan yang siap pakai:
+
+| Peran | Cakupan umum |
+|---|---|
+| **Owner** | Akses penuh ke seluruh bisnis |
+| **Admin** | Mengelola operasional toko |
+| **Manager** | Mengelola outlet / operasional harian |
+| **Kasir** | Transaksi di Aplikasi POS |
+| **Cook** | Akses menu dapur / pesanan |
+| **Waiter** | Akses pesanan & meja |
+| **Driver** | Akses pengantaran / delivery |
+| **Other** | Peran bebas/kustom |
+
+<Callout type="info" title="Peran bawaan bisa diubah">
+  Anda bisa menyesuaikan izin peran bawaan sesuai kebutuhan toko, atau membuat peran kustom sendiri.
+</Callout>
+
+## Kelompok izin
+
+Izin dikelompokkan per modul, misalnya:
+
+- **Dashboard** — melihat beranda.
+- **Transaksi** — melihat/mengelola riwayat transaksi.
+- **Produk & Stok** — melihat, menambah, mengedit, menghapus produk.
+- **Pelanggan** — melihat/mengelola pelanggan.
+- **Laporan** — melihat laporan.
+- **Pengeluaran** — melihat/mencatat pengeluaran.
+- **Kelola Toko** — mengelola cabang, karyawan, kode akses, shift, metode bayar, pajak, struk, peran.
+
+<Callout type="tip" title="Prinsip minimal">
+  Beri izin seminimal mungkin sesuai tugas. Misalnya kasir cukup untuk transaksi, bukan menghapus produk atau melihat laporan keuangan.
+</Callout>
+
+## Membuat peran kustom
+
+1. Buka **Kelola Toko → Atur Peran Staff**.
+2. Klik **Tambah Peran**.
+3. Beri nama peran.
+4. Centang izin yang diizinkan per kelompok.
+5. Simpan.
+
+## Menetapkan peran ke karyawan
+
+Saat menambah/mengedit karyawan di [Karyawan](/store-management/employees), pilih peran yang sesuai.
+
+## Mengubah izin peran
+
+- Klik peran → ubah centang izin → simpan.
+- Perubahan langsung berlaku untuk semua karyawan dengan peran tersebut.
+
+<Callout type="warning" title="Reset peran">
+  Gunakan tombol **Reset ke bawaan** untuk mengembalikan peran ke setelan semula jika konfigurasi sudah berantakan.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Kenapa menu tidak muncul untuk karyawan saya?">
+    Karyawan hanya melihat menu yang diizinkan perannya. Periksa izin peran di Atur Peran Staff.
+  </Accordion>
+  <Accordion title="Bisakah satu karyawan punya dua peran?">
+    Saat ini satu karyawan memakai satu peran. Buat peran kustom jika butuh kombinasi izin.
+  </Accordion>
+</AccordionGroup>

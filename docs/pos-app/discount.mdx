@@ -1,0 +1,47 @@
+---
+title: "Diskon"
+description: "Menerapkan diskon pada transaksi POS dari diskon yang sudah dibuat di Dashboard."
+---
+
+# Diskon
+
+Diskon dipakai kasir saat memberikan potongan harga kepada pelanggan. Diskon **dibuat di Dashboard** oleh admin, lalu **dipilih di Aplikasi POS** saat transaksi.
+
+## Cara membuat diskon (Dashboard)
+
+Baca panduan lengkap di [Manajemen Diskon](/products/discounts). Singkatnya:
+
+1. Buka **Produk & Stok → Diskon**.
+2. Klik **Tambah Diskon**, isi nama, kode voucher, tipe (persen/nominal), nilai, dan ketentuan.
+3. Aktifkan diskon agar bisa dipakai kasir.
+
+## Cara memakai diskon (Aplikasi POS)
+
+1. Pada halaman **POS**, pastikan keranjang sudah berisi produk.
+2. Ketuk **Diskon** pada area ringkasan keranjang.
+3. Pilih diskon dari daftar yang tersedia (diskon aktif milik outlet tersebut).
+4. Ringkasan keranjang otomatis memperbarui jumlah **potongan** dan **total akhir**.
+
+<Callout type="info" title="Batas pemakaian diskon">
+  Setiap diskon memiliki ketentuan yang dikelola admin — seperti **minimal pembelian** dan **maksimal potongan** (maksimal diskon). Diskon hanya berlaku jika total transaksi memenuhi syaratnya.
+</Callout>
+
+## Contoh
+
+| Diskon | Tipe | Nilai | Syarat |
+|---|---|---|---|
+| Diskon Ramadhan | Persen | 10% | Min. belanja Rp50.000, maks. diskon Rp10.000 |
+| Potongan Langsung | Nominal | Rp5.000 | Tanpa syarat |
+
+<Callout type="tip" title="Diskon tidak muncul di POS?">
+  Pastikan diskon berstatus **Aktif** dan berlaku di outlet yang sedang aktif. Cek kembali di Dashboard → Diskon.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Boleh kasir membuat diskon sendiri?">
+    Tidak. Diskon dikelola admin di Dashboard. Kasir hanya memilih diskon yang sudah aktif.
+  </Accordion>
+  <Accordion title="Diskon berlaku untuk item atau transaksi?">
+    Diskon yang dipilih di POS berlaku pada **transaksi** (total keranjang), mengikuti ketentuan diskon tersebut.
+  </Accordion>
+</AccordionGroup>

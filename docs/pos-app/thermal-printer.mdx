@@ -1,0 +1,61 @@
+---
+title: "Printer Thermal"
+description: "Mengatur printer struk di Aplikasi POS: jaringan (IP 9100), Bluetooth, dan USB."
+---
+
+# Printer Thermal
+
+Struk transaksi dicetak ke **printer thermal** yang terhubung ke perangkat POS. Printer diatur dari halaman **Printer** di Aplikasi POS (buka dari **Profil → Atur Printer**).
+
+<Callout type="info" title="Tampilan struk diatur di Dashboard">
+  Pengaturan tampilan struk (ukuran kertas, header, footer, logo) dilakukan admin di **Dashboard → Kelola Toko → Struk**. Baca [Template Struk](/store-management/receipt).
+</Callout>
+
+## Menambahkan printer
+
+1. Buka **Profil → Atur Printer**.
+2. Pilih **jenis koneksi** printer Anda:
+
+| Jenis | Cara kerja |
+|---|---|
+| **Network / Wi-Fi** | Printer terhubung ke jaringan. Masukkan **alamat IP** dan **port** (umumnya **9100**). |
+| **Bluetooth** | Cari printer Bluetooth di sekitar, lalu pasangkan. |
+| **USB** | Printer terhubung langsung ke perangkat via kabel USB. |
+
+3. Untuk printer jaringan, masukkan IP (misal `192.168.1.50`) dan port (misal `9100`), lalu **Simpan**.
+4. Untuk Bluetooth/USB, cari perangkat lalu pilih printer Anda.
+
+## Menguji printer
+
+Setelah printer tersimpan, gunakan **Uji Cetak** untuk memastikan printer merespons dan struk tercetak dengan benar.
+
+<Callout type="warning" title="Printer tidak merespons?">
+  - Pastikan printer dan perangkat berada di **jaringan yang sama** (untuk printer jaringan).
+  - Cek **IP/port** printer di pengaturan printer.
+  - Pastikan printer dalam keadaan **nyala dan siap** (online).
+</Callout>
+
+## Pengaturan cetak
+
+- **Auto print** — struk dicetak otomatis setiap transaksi selesai.
+- **Lebar struk** — pilih ukuran kertas, umumnya **58 mm** atau **80 mm**, sesuai printer Anda.
+- **Printer aktif** — pilih printer yang dipakai; nama dan tipe koneksinya tampil di halaman Profil sebagai **"Tersimpan"**.
+
+## Mengganti / menghapus printer
+
+Buka halaman Printer, lalu:
+
+- **Ganti** printer lain yang tersimpan sebagai printer aktif.
+- **Hapus** printer yang sudah tidak dipakai.
+
+<AccordionGroup>
+  <Accordion title="Struk tidak tercetak setelah bayar?">
+    Pastikan printer aktif sudah dipilih, opsi auto print aktif, dan printer dalam keadaan online. Jalankan **Uji Cetak** untuk memastikan koneksi.
+  </Accordion>
+  <Accordion title="Perangkat lain perlu atur printer sendiri?">
+    Ya. Pengaturan printer bersifat per perangkat, jadi setiap perangkat POS perlu menambahkan printer-nya masing-masing.
+  </Accordion>
+  <Accordion title="Format struk bisa diubah?">
+    Tampilan struk (header, footer, logo, ukuran kertas) diatur di Dashboard → Struk. Ukuran kertas di aplikasi POS harus sesuai dengan template tersebut.
+  </Accordion>
+</AccordionGroup>

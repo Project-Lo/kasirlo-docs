@@ -1,0 +1,46 @@
+---
+title: "Scan Barcode"
+description: "Memindai barcode produk dengan scanner HID/keyboard untuk mencari atau menambah produk."
+---
+
+# Scan Barcode
+
+Menu **Scan Barcode** di Dashboard memungkinkan Anda memindai kode barcode produk dengan **scanner barcode** (yang bertingkah seperti keyboard) untuk mencari produk atau membuat produk baru dari barcode.
+
+<Callout type="info" title="Beda dengan scan di POS">
+  Scan di Dashboard dipakai untuk **manajemen produk** (mencari, menambah, mengecek). Di Aplikasi POS, scan barcode dipakai **kasir saat bertransaksi** — baca [Membuat Transaksi](/pos-app/create-transaction).
+</Callout>
+
+## Cara kerja
+
+1. Buka **Produk & Stok → Scan Barcode**.
+2. Arahkan kursor ke kolom barcode.
+3. Pindai barcode produk dengan scanner — hasil pindai otomatis terisi.
+
+## Mencari produk dari barcode
+
+Jika barcode cocok dengan produk yang sudah ada, produk tersebut langsung ditemukan dan ditampilkan. Anda bisa:
+
+- Melihat detail produk.
+- Membuka produk di [Manajemen Produk](/products/manage-products) untuk mengedit harga/stok.
+
+## Membuat produk dari barcode
+
+Jika barcode **belum terdaftar**, sistem menawarkan untuk **menambah produk baru** dengan barcode tersebut. Lengkapi nama, kategori, harga, dan stok seperti pada [Manajemen Produk](/products/manage-products).
+
+<Callout type="tip" title="Scanner tanpa tombol?">
+  Gunakan scanner HID (dikenali sebagai keyboard) sehingga hasil pindai otomatis masuk ke kolom barcode tanpa perlu mengetik manual.
+</Callout>
+
+## Riwayat scan
+
+Halaman ini menampilkan riwayat barcode yang baru dipindai sehingga mudah ditemukan kembali.
+
+<AccordionGroup>
+  <Accordion title="Scan tidak merespons?">
+    Pastikan kursor berada di kolom barcode dan scanner terhubung. Jika barcode tidak ditemukan, sistem akan menawarkan pembuatan produk baru.
+  </Accordion>
+  <Accordion title="Barcode sama untuk banyak produk?">
+    Setiap produk sebaiknya memiliki barcode unik agar hasil scan akurat.
+  </Accordion>
+</AccordionGroup>

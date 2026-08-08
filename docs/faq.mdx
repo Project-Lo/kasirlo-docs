@@ -1,0 +1,93 @@
+---
+title: "FAQ"
+description: "Pertanyaan umum seputar KasirLo: login, shift, transaksi, produk, dan printer."
+---
+
+# FAQ
+
+## Akun & Login
+
+<AccordionGroup>
+  <Accordion title="Beda login Dashboard dan Aplikasi POS?">
+    Dashboard memakai **email + password** (di browser). Aplikasi POS memakai **Kode Akses Kasir + PIN 6 digit** (di HP/tablet). Baca [Login Kasir](/pos-app/login-cashier).
+  </Accordion>
+  <Accordion title="Bagaimana mendapatkan kode akses kasir?">
+    Pemilik/admin membuatnya di **Dashboard → Kelola Toko → Kode Akses Kasir**. Baca [Kode Akses Kasir](/store-management/cashier-access).
+  </Accordion>
+  <Accordion title="Kasir lupa PIN, bagaimana?">
+    Admin/pemilik mengatur ulang PIN di **Dashboard → Kelola Toko → Karyawan**.
+  </Accordion>
+</AccordionGroup>
+
+## Shift & Transaksi
+
+<AccordionGroup>
+  <Accordion title="Kenapa tidak bisa bertransaksi di POS?">
+    Kasir harus **membuka shift** terlebih dahulu di tab **Shift**. Tanpa shift aktif, POS tidak bisa dipakai. Baca [Buka & Tutup Shift](/pos-app/shift).
+  </Accordion>
+  <Accordion title="Bagaimana menghitung kas saat menutup shift?">
+    Hitung fisik uang tunai di laci lalu masukkan sebagai **kas aktual**. Sistem menghitung **kas diharapkan** dan **selisih**.
+  </Accordion>
+  <Accordion title="Bisa melakukan retur/refund dari Dashboard?">
+    Dashboard hanya **menampilkan status** transaksi (Completed/Refunded/Void). Aksi retur/refund tidak tersedia di menu Dashboard.
+  </Accordion>
+  <Accordion title="Di mana melihat semua transaksi?">
+    Di **Dashboard → Riwayat Transaksi** dengan filter outlet, tanggal, dan status. Di aplikasi POS gunakan tab **Transaksi** untuk transaksi terbaru.
+  </Accordion>
+</AccordionGroup>
+
+## Produk & Stok
+
+<AccordionGroup>
+  <Accordion title="Kenapa produk tidak muncul di POS?">
+    Pastikan produk **aktif**, memiliki **harga**, dan tersedia di **outlet aktif** kasir.
+  </Accordion>
+  <Accordion title="Apa itu katalog master vs stok outlet?">
+    "Semua Outlet" = katalog master produk (nama, kategori, SKU). Pilih satu outlet = harga & stok di outlet tersebut.
+  </Accordion>
+  <Accordion title="Bagaimana menambah banyak produk sekaligus?">
+    Gunakan **Import Excel** di Manajemen Produk dengan template yang disediakan.
+  </Accordion>
+  <Accordion title="Bagaimana jika stok selisih?">
+    Gunakan **Penyesuaian Stok** pada produk di outlet terkait dan isi alasan perubahannya.
+  </Accordion>
+</AccordionGroup>
+
+## Pajak, Diskon & Metode Bayar
+
+<AccordionGroup>
+  <Accordion title="Bagaimana menambah PPN?">
+    Tambahkan di **Dashboard → Kelola Toko → Pajak** dengan tarif (misal 11%) dan mode **Additive**.
+  </Accordion>
+  <Accordion title="Diskon yang saya buat tidak muncul di POS?">
+    Pastikan diskon **Aktif**, periode berlakunya sesuai, dan memenuhi syarat minimum pembelian.
+  </Accordion>
+  <Accordion title="Metode bayar tidak muncul di POS?">
+    Pastikan metode berstatus **Aktif** di **Dashboard → Kelola Toko → Metode Pembayaran**.
+  </Accordion>
+</AccordionGroup>
+
+## Printer & Struk
+
+<AccordionGroup>
+  <Accordion title="Struk tidak tercetak setelah bayar?">
+    Pastikan printer **aktif** di **Profil → Atur Printer**, opsi auto print menyala, dan printer dalam keadaan online. Jalankan **Uji Cetak**.
+  </Accordion>
+  <Accordion title="Struk tercetak tidak rapi?">
+    Cocokkan **ukuran kertas (58/80 mm)** antara pengaturan printer di Aplikasi POS dan **Dashboard → Struk**.
+  </Accordion>
+  <Accordion title="Bagaimana mengubah header/footer struk?">
+    Atur di **Dashboard → Kelola Toko → Struk** per outlet, lalu gunakan preview untuk memastikan hasilnya.
+  </Accordion>
+</AccordionGroup>
+
+## Lainnya
+
+<AccordionGroup>
+  <Accordion title="Bagaimana mengubah tampilan struk per outlet?">
+    Template struk diatur per outlet di **Dashboard → Struk**.
+  </Accordion>
+  <Accordion title="Bagaimana jika saya butuh bantuan lebih lanjut?">
+    Hubungi dukungan KasirLo melalui situs **kasirlo.com** atau saluran dukungan yang tersedia di akun Anda.
+  </Accordion>
+</AccordionGroup>

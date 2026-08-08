@@ -1,0 +1,61 @@
+---
+title: "Metode Pembayaran"
+description: "Mengelola metode pembayaran yang tersedia: Tunai, QRIS, Debit, E-Wallet, dan lainnya."
+---
+
+# Metode Pembayaran
+
+Menu **Metode Pembayaran** menentukan cara pembayaran yang bisa dipilih kasir saat transaksi di Aplikasi POS.
+
+## Tipe metode yang tersedia
+
+KasirLo mendukung beberapa tipe:
+
+- **Tunai** — uang fisik.
+- **QRIS** — kode QR pembayaran.
+- **Debit** — kartu debit.
+- **Kredit** — kartu kredit.
+- **E-Wallet** — dompet digital.
+- **Transfer Bank** — transfer antar bank.
+- **Lainnya** — metode lain sesuai bisnis Anda.
+
+## Menambahkan metode pembayaran
+
+1. Buka **Kelola Toko → Metode Pembayaran**.
+2. Klik **Tambah Metode**.
+3. Isi data:
+
+| Kolom | Keterangan |
+|---|---|
+| **Nama** | Nama metode (misal "QRIS", "GoPay", "Kartu Debit") |
+| **Kode** | Kode singkat metode |
+| **Tipe** | Pilih tipe dari daftar di atas |
+| **Status** | **Aktif** atau **Nonaktif** |
+
+4. Simpan.
+
+<Callout type="tip" title="Nama tampil di POS">
+  Nama metode yang Anda buat tampil di daftar **Metode Pembayaran** saat kasir membayar di Aplikasi POS.
+</Callout>
+
+## Mengaktifkan / menonaktifkan
+
+- **Aktif** — metode bisa dipilih kasir di POS.
+- **Nonaktif** — metode disembunyikan.
+
+<Callout type="warning" title="Nonaktifkan dengan hati-hati">
+  Transaksi yang sudah tercatat memakai metode tertentu tetap tersimpan, meskipun metode itu dinonaktifkan setelahnya.
+</Callout>
+
+## Mengedit metode
+
+Klik metode untuk mengubah nama, tipe, atau status.
+
+<AccordionGroup>
+  <Accordion title="Metode bayar favorit tidak muncul di POS?">
+    Pastikan berstatus **Aktif**. Aplikasi POS hanya menampilkan metode aktif.
+  </Accordion>
+  <Accordion title="Bisa mengelompokkan transfer bank per bank?">
+    Bisa. Buat satu metode per bank (misal "BCA", "BRI") dengan tipe **Transfer Bank**.
+  </Accordion>
+</AccordionGroup>

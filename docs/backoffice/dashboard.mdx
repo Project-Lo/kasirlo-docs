@@ -1,0 +1,49 @@
+---
+title: "Dashboard Beranda"
+description: "Ringkasan kinerja toko di Dashboard KasirLo: omset, laba, dan modul."
+---
+
+# Dashboard Beranda
+
+Halaman pertama setelah masuk ke Dashboard adalah **Beranda**. Halaman ini memberi gambaran singkat kondisi bisnis Anda hari ini.
+
+## Kartu ringkasan
+
+Di bagian atas halaman terdapat kartu ringkasan:
+
+| Kartu | Isi |
+|---|---|
+| **Omset Tercatat** | Total penjualan tercatat pada rentang yang dipilih |
+| **Laba Bersih** | Perkiraan laba setelah dikurangi harga modal |
+| **Produk Perlu Perhatian** | Produk dengan stok di bawah minimum atau perlu dicek |
+| **Cakupan Modul** | Ringkasan modul yang sudah/sedang digunakan |
+
+<Callout type="info" title="Fitur bertahap">
+  Beberapa ringkasan (misal Laba Bersih) ditampilkan sebagai **"Belum tersedia"** hingga data lengkap atau fitur rilis penuh.
+</Callout>
+
+## Menu modul
+
+Dashboard menyediakan **kartu akses cepat ke modul**:
+
+- Manajemen Produk
+- Transaksi / Riwayat Transaksi
+- Pelanggan
+- Laporan
+- Pengeluaran
+- Pengaturan Toko
+
+Klik kartu untuk membuka halaman modul yang sesuai.
+
+## Ringkasan kondisi bisnis
+
+Bagian bawah halaman menampilkan ringkasan singkat seperti transaksi terbaru dan poin penting lainnya agar Anda tahu perkembangan toko sekilas.
+
+<AccordionGroup>
+  <Accordion title="Data dashboard berapa lama diperbarui?">
+    Data diambil langsung dari backend, jadi selalu mengikuti transaksi terbaru. Gunakan filter rentang tanggal jika tersedia.
+  </Accordion>
+  <Accordion title="Kenapa angka laba "belum tersedia"?">
+    Laba dihitung dari data harga modal produk. Pastikan produk Anda memiliki **harga modal** di [Manajemen Produk](/products/manage-products).
+  </Accordion>
+</AccordionGroup>
