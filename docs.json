@@ -43,7 +43,7 @@
           "backoffice/customers",
           "backoffice/reports"
         ],
-        "icon": "layout-dashboard"
+        "icon": "gauge"
       },
       {
         "group": "Produk & Stok",
@@ -54,7 +54,7 @@
           "products/discounts",
           "products/order-types"
         ],
-        "icon": "package"
+        "icon": "box"
       },
       {
         "group": "Kelola Toko",
@@ -77,7 +77,7 @@
         "pages": [
           "faq"
         ],
-        "icon": "circle-help"
+        "icon": "circle-question"
       }
     ]
   },
