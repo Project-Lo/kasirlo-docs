@@ -1,55 +1,35 @@
-# Mintlify Starter Kit
+# KasirLo Docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+Dokumentasi [KasirLo](https://kasirlo.com) — aplikasi kasir (POS) untuk toko, minimarket, kedai kopi, restoran, dan bisnis retail. Dibangun dengan [Mintlify](https://mintlify.com), ditulis dalam bahasa Indonesia.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Struktur konten
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Halaman adalah file MDX dengan YAML frontmatter, terletak di **root** repo (bukan subfolder `docs/`). Navigasi didefinisikan di `docs.json`:
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+| Grup | Direktori | Isi |
+|---|---|---|
+| Memulai | `getting-started/` | Pengenalan, pendaftaran & login, menyiapkan toko pertama |
+| Aplikasi POS | `pos-app/` | Login kasir, shift, transaksi, pembayaran, diskon, printer |
+| Dashboard (Back Office) | `backoffice/` | Beranda, riwayat transaksi, pengeluaran, pelanggan, laporan |
+| Produk & Stok | `products/` | Manajemen produk, scan barcode, kategori, diskon, tipe pesanan |
+| Kelola Toko | `store-management/` | Cabang, karyawan, kode akses, shift, peran, pembayaran, pajak, struk, notifikasi, pengaturan |
+| Lainnya | `faq.mdx` | Pertanyaan yang sering diajukan |
 
-## AI-assisted writing
+## Preview lokal
 
-Set up your AI coding tool to work with Mintlify:
+Mintlify CLI menolak Node 25+, sedangkan sistem ini memakai Node yang lebih baru. Gunakan script `dev.sh` yang menjalankan CLI di bawah Node 22:
 
 ```bash
-npx skills add https://mintlify.com/docs
+./dev.sh
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+Buka `http://localhost:3000` di browser.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+## Konfigurasi
 
-## Development
+- Navigasi, warna, logo, navbar, dan footer diatur di `docs.json`.
+- File di `.mintignore` diabaikan saat build.
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Penerbitan
 
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Perubahan yang di-push ke branch default otomatis ter-deploy melalui GitHub App Mintlify.
